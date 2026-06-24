@@ -14,7 +14,6 @@
 ---------------------------------------------------------------------
 --								 DDL
 ---------------------------------------------------------------------
-/*
 
 CREATE TABLE clientes(
  	id 		SERIAL PRIMARY KEY,
@@ -47,8 +46,6 @@ CREATE TABLE ventas(
 --								 DML
 ---------------------------------------------------------------------
 
-*/
-/*
 BEGIN;
 
 INSERT INTO clientes (nombre, email, edad) VALUES
@@ -76,8 +73,8 @@ INSERT INTO ventas (id_cliente, id_producto, cantidad) VALUES
     (4, 2, 3),
     (5, 5, 1);
 COMMIT;
-*/
---/*
+
+
 ---------------------------------------------------------------------
 --						 Manipulación de datos
 ---------------------------------------------------------------------
@@ -96,6 +93,3 @@ WHERE categoria = 'Periféricos';
 -- DELETE
 DELETE FROM ventas
 WHERE id = 4;
-
-
- --*/
